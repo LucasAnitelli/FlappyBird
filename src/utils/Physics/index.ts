@@ -1,5 +1,5 @@
 import Matter from "matter-js";
-import { getPipeSizePosPair } from './src/utils/Random';
+import { getPipeSizePosPair } from '../Random';
 
 import { Dimensions } from 'react-native'
 import { GameEngineUpdateEventOptionType } from "react-native-game-engine";
@@ -14,7 +14,7 @@ const Physics = (entities: any, update: GameEngineUpdateEventOptionType) => {
         .forEach(t => {
             Matter.Body.setVelocity(entities.Bird.body, {
                 x: 0,
-                y: -8
+                y: -4
             })
         })
 

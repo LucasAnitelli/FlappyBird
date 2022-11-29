@@ -42,8 +42,8 @@ const Obstacle: React.FC<ObstacleProps> = (props) => {
   const widthBody = body.bounds.max.x - body.bounds.min.x
   const heightBody = body.bounds.max.y - body.bounds.min.y
 
-  const xBody = body.position.x - widthBody /2
-  const yBody = body.position.y - heightBody /2
+  const xBody = body.position.x - widthBody / 2
+  const yBody = body.position.y - heightBody / 2
 
   return(
     <Image 

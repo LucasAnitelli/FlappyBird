@@ -1,7 +1,6 @@
 import Matter from 'matter-js';
 import React from 'react';
-import { Image } from 'react-native';
-import BIRD from '../../assets/images/bird.png';
+import { View } from 'react-native';
 import { styles } from './styles';
 
 export interface FloorProps extends ColorProps {
@@ -40,8 +39,7 @@ const Floor: React.FC<FloorProps> = (props) => {
   const yBody = body.position.y - heightBody /2
 
   return(
-    <Image 
-      source={BIRD}
+    <View 
       style={styles({xBody, yBody, widthBody, heightBody, color }).floor}
     />
   );

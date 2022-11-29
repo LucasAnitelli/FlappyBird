@@ -12,7 +12,8 @@
       "backgroundColor": "#71C5CF"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/e50a01e0-9904-40c0-955b-fc8100c36e58"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -24,10 +25,20 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.lucasanitelli.flappybird",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e50a01e0-9904-40c0-955b-fc8100c36e58"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
     }
   }
 }

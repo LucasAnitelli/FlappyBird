@@ -20,7 +20,7 @@ export default () => {
 
   const BirdProp = {
     world,
-    pos: { x: 50, y: 300 },
+    pos: { x: 120, y: 400 },
     size: { height: 40, width: 40 }
   }
 
@@ -29,7 +29,7 @@ export default () => {
     label: 'ObstacleTop1',
     color: 'green',
     pos: { x: pipeSizePosA.pipeTop.pos.x, y: pipeSizePosA.pipeTop.pos.y },
-    size: { height: pipeSizePosA.pipeTop.size.height, width:  pipeSizePosA.pipeTop.size.width },
+    size: { width:  pipeSizePosA.pipeTop.size.width, height: pipeSizePosA.pipeTop.size.height },
     isTop: true,
   }
 
@@ -37,32 +37,34 @@ export default () => {
     world,
     label: 'ObstacleBottom1',
     color: 'green',
-    pos: { x: pipeSizePosA.pipeTop.pos.x, y: pipeSizePosA.pipeTop.pos.y },
-    size: { height: pipeSizePosA.pipeTop.size.height, width:  pipeSizePosA.pipeTop.size.width }
+    pos: { x: pipeSizePosA.pipeBottom.pos.x, y: pipeSizePosA.pipeBottom.pos.y },
+    size: { width:  pipeSizePosA.pipeBottom.size.width, height: pipeSizePosA.pipeBottom.size.height },
+    isTop: false,
   }
 
   const ObstacleTop2Prop = {
     world,
     label: 'ObstacleTop2',
-    color: 'orange',
+    color: 'green',
     pos: { x: pipeSizePosB.pipeTop.pos.x, y: pipeSizePosB.pipeTop.pos.y },
-    size: { height: pipeSizePosB.pipeTop.size.height, width:  pipeSizePosB.pipeTop.size.width },
+    size: { width:  pipeSizePosB.pipeTop.size.width, height: pipeSizePosB.pipeTop.size.height },
     isTop: true,
   }
 
   const ObstacleBottom2Prop = {
     world,
     label: 'ObstacleBottom2',
-    color: 'orange',
-    pos: { x: pipeSizePosB.pipeTop.pos.x, y: pipeSizePosB.pipeTop.pos.y },
-    size: { height: pipeSizePosB.pipeTop.size.height, width:  pipeSizePosB.pipeTop.size.width }
+    color: 'green',
+    pos: { x: pipeSizePosB.pipeBottom.pos.x, y: pipeSizePosB.pipeBottom.pos.y },
+    size: { width:  pipeSizePosB.pipeBottom.size.width, height: pipeSizePosB.pipeBottom.size.height },
+    isTop: false,
   }
 
   const FloorProp = {
     world,
-    color: 'green',
-    pos: { x: windowWidth / 2, y: windowHeight },
-    size: { height: 50, width: windowWidth }
+    color: '#E1D694',
+    pos: { x: windowWidth / 2, y: windowHeight - 17 },
+    size: { height: 51 + 20, width: windowWidth }
   }
   
   return {

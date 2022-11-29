@@ -3,7 +3,7 @@ import Start from './Start';
 import { GameEngine } from 'react-native-game-engine';
 import entities from '../../../entities';
 import { styles } from './styles';
-import Physics from '../../../../physics';
+import Physics from '../../../utils/Physics';
 import GameOver from './GameOver';
 import { Text } from 'react-native';
 
